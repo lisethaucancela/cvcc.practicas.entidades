@@ -33,7 +33,7 @@ public class CFacultades {
         this.Facultades = Facultades;
     }
 
-    public void addFuncionario(CFacultad OF) {
+    public void addFacultad(CFacultad OF) {
         try {
             if (this.Facultades == null) {
                 this.Facultades = new ArrayList<>();

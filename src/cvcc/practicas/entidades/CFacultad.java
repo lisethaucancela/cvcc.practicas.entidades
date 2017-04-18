@@ -5,13 +5,19 @@
  */
 package cvcc.practicas.entidades;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.logging.Logger;
+
 /**
  *
  * @author Liseth
  */
 public class CFacultad {
+
     private String Codigo;
-    private String Descripcion;
+    private String Nombre;
+    private List<CEscuela> Escuelas;
 
     public CFacultad() {
     }
@@ -24,12 +30,31 @@ public class CFacultad {
         this.Codigo = Codigo;
     }
 
-    public String getDescripcion() {
-        return Descripcion;
+    public String getNombre() {
+        return Nombre;
     }
 
-    public void setDescripcion(String Descripcion) {
-        this.Descripcion = Descripcion;
+    public void setNombre(String Nombre) {
+        this.Nombre = Nombre;
     }
-    
+
+    public List<CEscuela> getEscuelas() {
+        return Escuelas;
+    }
+
+    public void setEscuelas(List<CEscuela> Escuelas) {
+        this.Escuelas = Escuelas;
+    }
+
+    public void addEscuelas(CEscuela ES) {
+        try {
+            if (this.Escuelas == null) {
+                this.Escuelas = new ArrayList<>();
+            }
+            this.Escuelas.add(ES);
+        } catch (Exception e) {
+            Logger.getLogger("Escuelas").severe(e.getMessage());
+        }
+    }
+
 }
