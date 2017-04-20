@@ -13,10 +13,11 @@ import java.util.List;
  * @author Liseth
  */
 public class CPlanificacion {
+
     private int IdPlanificacion;
     private CPractica ObjPractica;
-    private Date FechaInicio;
-    private Date FechaFin;
+    private String FechaInicio;
+    private String FechaFin;
     private int HorasPlanificadas;
     private List<CActividadPlanificada> LstActividadesPlanificadas;
 
@@ -39,19 +40,19 @@ public class CPlanificacion {
         this.ObjPractica = ObjPractica;
     }
 
-    public Date getFechaInicio() {
+    public String getFechaInicio() {
         return FechaInicio;
     }
 
-    public void setFechaInicio(Date FechaInicio) {
+    public void setFechaInicio(String FechaInicio) {
         this.FechaInicio = FechaInicio;
     }
 
-    public Date getFechaFin() {
+    public String getFechaFin() {
         return FechaFin;
     }
 
-    public void setFechaFin(Date FechaFin) {
+    public void setFechaFin(String FechaFin) {
         this.FechaFin = FechaFin;
     }
 
@@ -71,5 +72,4 @@ public class CPlanificacion {
         this.LstActividadesPlanificadas = LstActividadesPlanificadas;
     }
 
-    
 }
