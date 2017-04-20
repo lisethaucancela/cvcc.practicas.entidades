@@ -29,7 +29,7 @@ public class CEscuelas {
         this.Escuelas = Escuelas;
     }
     
-     public void addFacultad(CEscuela OF) {
+     public void addEscuelas(CEscuela OF) {
         try {
             if (this.Escuelas == null) {
                 this.Escuelas = new ArrayList<>();
