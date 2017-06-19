@@ -18,9 +18,6 @@ public class CProyectoss {
 
     private List<CProyectos> proyectos;
 
-
-    /* public _CProyectos() {
-     }*/
     public CProyectoss() {
         this.proyectos = new ArrayList<>();
     }
@@ -41,7 +38,7 @@ public class CProyectoss {
             this.proyectos.add(oP);
 
         } catch (Exception e) {
-            Logger.getLogger("CProyectos").severe(e.getMessage());
+            Logger.getLogger("CProyectoss").severe(e.getMessage());
         }
     }
 

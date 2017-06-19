@@ -41,7 +41,7 @@ public class CModalidades {
             }
             this.ListModalidades.add(OF);
         } catch (Exception e) {
-            Logger.getLogger("CListModalidades").severe(e.getMessage());
+            Logger.getLogger("CModalidades").severe(e.getMessage());
         }
     }
 

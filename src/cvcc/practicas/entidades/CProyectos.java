@@ -22,7 +22,7 @@ public class CProyectos {
     private String descripcionTipoInvestigacion;
     private String descripcionTipoProyecto;
     private String descripcionEstadoProyecto;
-    private List<String> nombreInstitucionEjecutora;
+    private List<CInstitucionEjecutora> lstInstitucionesEjecutoras;
 
     /* public _CProyectos() {
      }*/
@@ -36,7 +36,7 @@ public class CProyectos {
         this.descripcionTipoInvestigacion = "";
         this.descripcionTipoProyecto = "";
         this.descripcionEstadoProyecto = "";
-        this.nombreInstitucionEjecutora = new ArrayList<>();
+        this.lstInstitucionesEjecutoras = new ArrayList<>();
 
     }
 
@@ -104,12 +104,12 @@ public class CProyectos {
         this.descripcionEstadoProyecto = descripcionEstadoProyecto;
     }
 
-    public List<String> getNombreInstitucionEjecutora() {
-        return nombreInstitucionEjecutora;
+    public List<CInstitucionEjecutora> getLstInstitucionesEjecutoras() {
+        return lstInstitucionesEjecutoras;
     }
 
-    public void setNombreInstitucionEjecutora(List<String> nombreInstitucionEjecutora) {
-        this.nombreInstitucionEjecutora = nombreInstitucionEjecutora;
+    public void setLstInstitucionesEjecutoras(List<CInstitucionEjecutora> lstInstitucionesEjecutoras) {
+        this.lstInstitucionesEjecutoras = lstInstitucionesEjecutoras;
     }
 
 }

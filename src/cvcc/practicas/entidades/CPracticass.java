@@ -33,7 +33,7 @@ public class CPracticass {
             this.practicas.add(oP);
 
         } catch (Exception e) {
-            Logger.getLogger("CPracticas").severe(e.getMessage());
+            Logger.getLogger("CPracticass").severe(e.getMessage());
         }
     }
 

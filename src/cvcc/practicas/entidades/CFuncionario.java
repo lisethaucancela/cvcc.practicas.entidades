@@ -5,10 +5,6 @@
  */
 package cvcc.practicas.entidades;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.logging.Logger;
-
 /**
  *
  * @author Liseth
@@ -16,24 +12,28 @@ import java.util.logging.Logger;
 public class CFuncionario {
 
     private long IdFuncionario;
-    private CEmpresa ObjEmpresa;
+    private String Cedula;
     private String Nombres;
+    private String Apellidos;
     private String Telefono;
+    private String Email;
     private String Cargo;
     private boolean Estado;
 
     public CFuncionario() {
         this.IdFuncionario = 0;
+        this.Cedula = "";
         this.Nombres = "";
+        this.Apellidos = "";
         this.Telefono = "";
+        this.Email = "";
         this.Cargo = "";
-        this.ObjEmpresa = null;
         this.Estado = false;
     }
 
     public CFuncionario(int IdFuncionario, CEmpresa ObjEmpresa, String Nombres, String Telefono, String Cargo) {
         this.IdFuncionario = IdFuncionario;
-        this.ObjEmpresa = ObjEmpresa;
+
         this.Nombres = Nombres;
         this.Telefono = Telefono;
         this.Cargo = Cargo;
@@ -45,14 +45,6 @@ public class CFuncionario {
 
     public void setIdFuncionario(long IdFuncionario) {
         this.IdFuncionario = IdFuncionario;
-    }
-
-    public CEmpresa getObjEmpresa() {
-        return ObjEmpresa;
-    }
-
-    public void setObjEmpresa(CEmpresa ObjEmpresa) {
-        this.ObjEmpresa = ObjEmpresa;
     }
 
     public String getNombres() {
@@ -85,6 +77,30 @@ public class CFuncionario {
 
     public void setEstado(boolean Estado) {
         this.Estado = Estado;
+    }
+
+    public String getCedula() {
+        return Cedula;
+    }
+
+    public void setCedula(String Cedula) {
+        this.Cedula = Cedula;
+    }
+
+    public String getApellidos() {
+        return Apellidos;
+    }
+
+    public void setApellidos(String Apellidos) {
+        this.Apellidos = Apellidos;
+    }
+
+    public String getEmail() {
+        return Email;
+    }
+
+    public void setEmail(String Email) {
+        this.Email = Email;
     }
 
 }

@@ -5,6 +5,9 @@
  */
 package cvcc.practicas.entidades;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Liseth
@@ -18,6 +21,7 @@ public class CUsuario {
     private String Email;
     private int numeroPractica;
     private boolean estado;
+    private CPracticass ListaPracticas;
 
 //    public CUsuario() {
 //    }
@@ -28,6 +32,7 @@ public class CUsuario {
         this.Apellidos = "";
         this.Email = "";
         this.numeroPractica = -1;
+        this.ListaPracticas = new CPracticass();
     }
 
     public CUsuario(int IdUsuario, String Cedula) {
@@ -90,6 +95,13 @@ public class CUsuario {
     public void setEstado(boolean estado) {
         this.estado = estado;
     }
-    
+
+    public CPracticass getListaPracticas() {
+        return ListaPracticas;
+    }
+
+    public void setListaPracticas(CPracticass ListaPracticas) {
+        this.ListaPracticas = ListaPracticas;
+    }
 
 }

@@ -13,6 +13,7 @@ public class CUnidadAdministrativa {
 
     private int IdUnidadAdministrativa;
     private CEmpresa ObjEmpresa;
+    private String nombre;
     private String Descripcion;
 
     public CUnidadAdministrativa() {
@@ -46,6 +47,14 @@ public class CUnidadAdministrativa {
 
     public void setDescripcion(String Descripcion) {
         this.Descripcion = Descripcion;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
 }
